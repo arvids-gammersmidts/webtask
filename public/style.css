@@ -1,17 +1,61 @@
+@font-face {
+  font-family: "Jost";
+  src: url("./font/Jost/Jost-VariableFont_ital\,wght.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
 * {
   background: white;
   color: black;
 }
 
+body {
+  font-family: Jost;
+  position: relative;
+  display: block;
+}
+
+header {
+  height: 80px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+form {
+  display: block;
+}
+
+.btn {
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 2.5rem;
+}
+
+.btn-add {
+  background: #618579;
+  color: rgb(241, 241, 241);
+}
+
+.btn-add:hover {
+  background: #235c49;
+  color: rgb(241, 241, 241);
+}
+
 .wrap {
-  display: inline-block;
   width: 100%;
+  display: inline-block;
 }
 
 .float-left {
   float: left;
+  position: relative;
 }
 
 .float-right {
   float: right;
+  position: relative;
+  top: 8px;
 }
