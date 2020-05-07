@@ -26,6 +26,19 @@ h1 {
 
 form {
   display: block;
+  box-sizing: border-box;
+}
+
+label {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+input[type="text"] {
+  height: 1.7rem;
+  font-size: 0.8rem;
+  width: 11rem;
 }
 
 .btn {
@@ -58,4 +71,21 @@ form {
   float: right;
   position: relative;
   top: 8px;
+}
+
+.row-form {
+  margin-bottom: 10px;
+}
+
+.row-form::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col-label {
+  float: left;
+  width: 5rem;
+}
+.col-input {
+  float: left;
 }
