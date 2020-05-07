@@ -1,19 +1,38 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Real life task</title>
+    <title>Add Product</title>
+
+    <style>
+      * {
+        background: white;
+        color: black;
+      }
+    </style>
   </head>
 
   <body>
-    <header></header>
+    <div class="wrapper">
+      <header style="display: inline-block;">
+        <h1>Add Product</h1>
+        <button type="submit">Save</button>
+      </header>
 
-    <div id="main">
-      <div class="container">
-        <h1>Matijs</h1>
-        <h3>Real life task</h3>
+      <div id="main">
+        <div class="container">
+          <form>
+            <label for="SKU">SKU</label>
+            <input type="text" name="SKU" id="SKU" />
+
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+            <label for="price">Price</label>
+            <input type="text" name="price" id="price" />
+          </form>
+        </div>
       </div>
-    </div>
 
-    <footer></footer>
+      <footer></footer>
+    </div>
   </body>
 </html>
