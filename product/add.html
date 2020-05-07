@@ -2,20 +2,21 @@
   <head>
     <meta charset="utf-8" />
     <title>Add Product</title>
-
-    <style>
-      * {
-        background: white;
-        color: black;
-      }
-    </style>
+    <link rel="stylesheet" href="../public/style.css" />
   </head>
 
   <body>
     <div class="wrapper">
-      <header style="display: inline-block;">
-        <h1>Add Product</h1>
-        <button type="submit">Save</button>
+      <header>
+        <div class="wrap">
+          <div class="float-left"><h1>Add Product</h1></div>
+          <div class="float-right">
+            <button type="submit">
+              Save
+            </button>
+          </div>
+        </div>
+        <hr />
       </header>
 
       <div id="main">
@@ -23,7 +24,6 @@
           <form>
             <label for="SKU">SKU</label>
             <input type="text" name="SKU" id="SKU" />
-
             <label for="name">Name</label>
             <input type="text" name="name" id="name" />
             <label for="price">Price</label>
