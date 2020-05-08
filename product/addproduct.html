@@ -1,13 +1,47 @@
 <html lang="en"><head>
   <meta charset="utf-8">
   <title>Real life task</title>
+  <link rel="stylesheet" type="text/css" href="./addproduct.css">
 </head>
 
 <body>
   <header><h1>Add product page<h1</header>
 
   <div id="main">
-    <div class="container"></div>
+    <div class="container">
+      <form>
+        <label for="sku">Sku:</label>
+        <input type="text" id="sku" name="sku">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="Price">Price:</label>
+        <input type="text" id="Price" name="Price">
+
+        <label for="type">Type switcher:</label>
+        <select id="type">
+          <option value="dvd">DVD</option>
+          <option value="furniture">Furniture</option>
+          <option value="book">Book</option>
+        </select> 
+
+        <label for="Size">Size:</label>
+        <input type="text" id="Size" name="Size">
+
+        <label for="Height">Height:</label>
+        <input type="text" id="Height" name="Height">
+
+        <label for="Width">Width:</label>
+        <input type="text" id="Width" name="Width">
+
+        <label for="Length">Length:</label>
+        <input type="text" id="Length" name="Length">
+
+        <label for="Weight">Weight:</label>
+        <input type="text" id="Weight" name="Weight">
+      </form>
+    </div>
   </div>
   
   <footer></footer>
