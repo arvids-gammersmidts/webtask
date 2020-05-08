@@ -1,32 +1,31 @@
-.product-wrap{
-    float: left;
+.product-wrap {
     width: 25%;
+    float: left;
 }
 
-.product{
+.product {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
     font-family: arial;
+    padding: 20px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 0;
-    padding: 20px;
-    background-color: aliceblue;
     position: relative;
 }
 
-.product input{
+.product input {
     position: absolute;
     top: 10px;
     left: 10px;
 }
-
-.price{
+  
+.price {
     color: grey;
     font-size: 22px;
 }
 
-.product-attribute{
+.product-attribute {
     text-transform: uppercase;
 }
