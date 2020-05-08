@@ -36,46 +36,20 @@ label {
   font-style: italic;
 }
 
-input[type="text"] {
-  height: 1.7rem;
-  font-size: 0.8rem;
-  width: 11rem;
-}
-
-.product-wrapper {
-  min-width: 25%;
-  float: left;
-}
-
-.product {
-  border: 1px solid #000;
-  /* margin: 10px 20px; */
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-top: 10px;
-  margin-bottom: 0;
-  padding-top: 15px;
-  padding-bottom: 10px;
-  text-align: center;
-  position: relative;
-}
-
-.product > p,
-h4 {
-  margin: 5px 0;
-  font-family: Arial, sans-serif;
-}
-
-.product > input[type="checkbox"] {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-
 .btn {
   border: none;
   font-size: 1.2rem;
   padding: 0.5rem 2.5rem;
+}
+
+.btn-submit {
+  background: rgb(27, 165, 0);
+  color: #fff;
+}
+
+.btn-submit:hover {
+  background: rgb(24, 109, 8);
+  color: #fff;
 }
 
 .btn-add {
@@ -102,21 +76,4 @@ h4 {
   float: right;
   position: relative;
   top: 8px;
-}
-
-.row-form {
-  margin-bottom: 10px;
-}
-
-.row-form::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.col-label {
-  float: left;
-  width: 5rem;
-}
-.col-input {
-  float: left;
 }

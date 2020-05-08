@@ -3,6 +3,7 @@
     <meta charset="utf-8" />
     <title>Product List</title>
     <link rel="stylesheet" href="../public/style.css" />
+    <link rel="stylesheet" href="../public/listProduct.css" />
   </head>
 
   <body>
@@ -12,8 +13,14 @@
           <div class="float-left">
             <h1>Product List</h1>
           </div>
-          <div class="float-left">
-            <form></form>
+          <div class="float-right">
+            <form>
+              <select name="deleteAction">
+                <option value="deleteSelected">Delete Selected</option>
+                <option value="deleteAll">Delete All</option>
+              </select>
+              <input type="submit" class="btn btn-submit" value="Submit" />
+            </form>
           </div>
         </div>
         <hr />
