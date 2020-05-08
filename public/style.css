@@ -16,6 +16,7 @@ body {
 
 header {
   height: 80px;
+  margin: 0 30px;
 }
 
 h1 {
@@ -39,6 +40,36 @@ input[type="text"] {
   height: 1.7rem;
   font-size: 0.8rem;
   width: 11rem;
+}
+
+.product-wrapper {
+  min-width: 25%;
+  float: left;
+}
+
+.product {
+  border: 1px solid #000;
+  /* margin: 10px 20px; */
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.product > p,
+h4 {
+  margin: 5px 0;
+  font-family: Arial, sans-serif;
+}
+
+.product > input[type="checkbox"] {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .btn {
