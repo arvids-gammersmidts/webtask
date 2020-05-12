@@ -1,0 +1,17 @@
+
+form {
+    display: block;
+}
+
+form label {
+    clear: left;
+    display: block;
+    float: left;
+}
+
+form select,
+form input {
+    clear: right;
+    display: block;
+    float: left;
+}
