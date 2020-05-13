@@ -1,47 +1,73 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="utf-8">
+  <meta name="description" content="Junior web developer course first project">
+  <meta name="keywords" content="HTML, CSS">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Real life task</title>
   <link rel="stylesheet" type="text/css" href="./addproduct.css">
 </head>
 
 <body>
   <header>
-    <h1>Add product page</h1>
+    <div class="header-wrap">
+      <h1 class="header-item-left">Add product page</h1>
+      <input class="header-item-right" type="submit" id="save" value="Save">
+    </div>
   </header>
 
   <div id="main">
-    <div class="container">
+    <div class="form-wrap">
       <form>
-        <label for="sku">Sku:</label>
-        <input type="text" id="sku" name="sku">
+        <div class="form-item">
+          <label class="form-item-left" for="sku">SKU</label>
+          <input class="form-item-right" type="text" id="sku" name="sku">
+        </div>
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+        <div class="form-item">
+          <label class="form-item-left" for="name">Name</label>
+          <input class="form-item-right" type="text" id="name" name="name">
+        </div>
+        
+        <div class="form-item">
+          <label class="form-item-left" for="Price">Price</label>
+          <input class="form-item-right" type="text" id="Price" name="Price">
+        </div>
 
-        <label for="Price">Price:</label>
-        <input type="text" id="Price" name="Price">
+        <div class="form-item">
+          <label class="form-item-left" for="type">Type switcher</label>
+          <select class="form-item-right" id="type">
+            <option value="dvd">DVD</option>
+            <option value="furniture">Furniture</option>
+            <option value="book">Book</option>
+          </select> 
+        </div>
 
-        <label for="type">Type switcher:</label>
-        <select id="type">
-          <option value="dvd">DVD</option>
-          <option value="furniture">Furniture</option>
-          <option value="book">Book</option>
-        </select> 
+        <div class="form-item">
+          <label class="form-item-left" for="Size">Size</label>
+          <input class="form-item-right" type="text" id="Size" name="Size">
+        </div>
 
-        <label for="Size">Size:</label>
-        <input type="text" id="Size" name="Size">
+        <div class="form-item">
+          <label class="form-item-left" for="Height">Height</label>
+          <input class="form-item-right" type="text" id="Height" name="Height">
+        </div>
+        
+        <div class="form-item">
+          <label class="form-item-left" for="Width">Width</label>
+          <input class="form-item-right" type="text" id="Width" name="Width">
+        </div>
 
-        <label for="Height">Height:</label>
-        <input type="text" id="Height" name="Height">
+        <div class="form-item">
+          <label class="form-item-left" for="Length">Length</label>
+          <input class="form-item-right" type="text" id="Length" name="Length">
+        </div>
 
-        <label for="Width">Width:</label>
-        <input type="text" id="Width" name="Width">
-
-        <label for="Length">Length:</label>
-        <input type="text" id="Length" name="Length">
-
-        <label for="Weight">Weight:</label>
-        <input type="text" id="Weight" name="Weight">
+        <div class="form-item">
+          <label class="form-item-left" for="Weight">Weight</label>
+          <input class="form-item-right" type="text" id="Weight" name="Weight">
+        </div>
       </form>
     </div>
   </div>
