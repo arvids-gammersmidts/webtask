@@ -1,6 +1,11 @@
-
-form {
+body{
+    font-family: arial;
+    margin-left: 20px;
+    margin-right: 20px;     
+}
+form {     
     display: block;
+    width: 100%;
 }
 
 form label {
@@ -14,4 +19,46 @@ form input {
     clear: right;
     display: block;
     float: left;
+    display: inline;
+}
+
+.row{
+    margin-top: 20px; 
+    float:left;
+    width:100%;
+}
+
+.container {   
+    border-radius: 5px;    
+    padding: 20px;
+}
+  
+.col-label {
+    float: left;
+    width: 10%;
+    margin-top: 6px;
+}
+  
+.col-input {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.header-container{
+    float:left;
+    width:100%;
+    border-bottom: 3px solid black;
+    display: inline-block;
+}
+
+.header-title{
+    display: inline-block;
+}
+
+.header-item{
+    margin-top: 30px;
+    float:right;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
