@@ -2,6 +2,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="description" content="Product List">
+  <meta name="keywords" content="DVD, Furniture, Books">
+  <meta name="author" content="Kaspars Paulins">
   <title>Real life task</title>
   <link rel="stylesheet" type="text/css" href="./productlist.css">
 </head>
@@ -9,6 +12,13 @@
 <body>
   <header>
     <h1>Product List</h1>
+    <form id="action-form">
+      <select id="actions" form="action-form">
+        <option value="delete">Mass Delete Action</option>
+      </select>
+      <input type="submit">
+    </form>
+    <hr>
   </header>
 
   <div id="main">
