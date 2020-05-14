@@ -4,28 +4,55 @@
 }
 
 .product {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    text-align: center;
-    font-family: arial;
-    padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 0;
-    position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: arial;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  position: relative;
 }
 
 .product input {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
   
 .price {
-    color: grey;
-    font-size: 22px;
+  color: grey;
+  font-size: 22px;
 }
 
 .product-attribute {
-    text-transform: uppercase;
+  text-transform: uppercase;
+}
+
+.header-container{
+  font-family: arial;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 3px solid black;  
+}
+
+.header-title{
+  display: inline-block;  
+  width: 70%;
+}
+.header-action{
+  margin-top: 20px;
+  display: inline;  
+  float: right;
+  width: 23%;
+  position: relative;
+}
+.action-select{
+  float: left;
+}
+
+#action-button{
+  float:right;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
