@@ -1,4 +1,17 @@
 
+header button{
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right:20px;
+    margin-block-end: 0;
+    padding-left:35px;
+    padding-right:35px;
+}
+
 form {
     display: block;
 }

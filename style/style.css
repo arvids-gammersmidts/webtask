@@ -1,3 +1,26 @@
 h1 {
     padding: 20px;
+    display:inline-block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.header-wrap{
+    position:relative;
+}
+    
+.header-line-left{
+    float:left;
+    width:calc(50% - 20px);
+    height:3px;
+    margin-left:20px;
+    
+    background-image: linear-gradient(to right, white , grey);
+}
+.header-line-right{
+    float:right;
+    width:calc(50% - 20px);
+    height:3px;
+    margin-right:20px;
+    background-image: linear-gradient(to left, white , grey);
 }
