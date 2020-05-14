@@ -4,6 +4,11 @@
   margin: 0 20px;
   border-bottom: 1px solid;
 }
+@media (max-width: 450px) {
+  .header-content {
+    flex-wrap: wrap;
+  }
+}
 
 .header-content_right {
   display: flex;
