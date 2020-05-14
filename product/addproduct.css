@@ -1,14 +1,14 @@
-
+.container {
+    padding: 0 20px;
+}
 form {
     display: block;
 }
-
 form label {
     clear: left;
     display: block;
     float: left;
 }
-
 form select,
 form input {
     clear: right;

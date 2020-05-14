@@ -2,7 +2,6 @@
     width: 25%;
     float: left;
 }
-
 .product {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -14,18 +13,18 @@
     margin-bottom: 0;
     position: relative;
 }
-
 .product input {
     position: absolute;
     top: 10px;
     left: 10px;
-}
-  
+}  
 .price {
     color: grey;
     font-size: 22px;
 }
-
 .product-attribute {
     text-transform: uppercase;
+}
+#action {
+    margin-right:10px;
 }
