@@ -1,0 +1,41 @@
+
+form {
+    display: block;
+}
+
+form label {
+    clear: left;
+    display: block;
+    float: left;
+}
+
+form select,
+form input {
+    clear: right;
+    display: block;
+    float: left;
+}
+
+header {
+    padding: 20px;
+}
+
+.header-wraper {
+    border-bottom: 2px solid #333333;
+    padding: 5px;
+}
+
+.header-wraper>div {
+    display: inline-block;
+}
+
+.action-wraper {
+    float: right;
+    padding-top: 30px;
+}
+
+header button {
+    border: 1px solid #333333;
+    box-shadow: 1px 2px;
+    width: 70px;
+}

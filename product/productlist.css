@@ -1,0 +1,60 @@
+.product-wrap {
+    width: 25%;
+    float: left;
+}
+
+.product {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: arial;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.product input {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+  
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.product-attribute {
+    text-transform: uppercase;
+}
+
+header {
+    padding: 20px;
+}
+
+.header-wraper {
+    border-bottom: 2px solid #333333;
+    padding: 5px;
+}
+
+.header-wraper>div {
+    display: inline-block;
+}
+
+.action-wraper {
+    letter-spacing: 5px;
+    float: right;
+    padding-top: 30px;
+}
+
+header button {
+    background-color: white;
+    width: 70px;
+    border: 1px solid #333333;
+    box-shadow: 1px 2px;
+}
+header select {
+border: 1px solid black;
+}
