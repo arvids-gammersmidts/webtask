@@ -2,13 +2,33 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="homework" content="Real life task">
+  <meta name="keywords" content="HTML">
+  <meta name="author" content="Ronalds Rundāns">
+  <meta name="viewport" content="">
   <title>Real life task</title>
   <link rel="stylesheet" type="text/css" href="./productlist.css">
 </head>
 
 <body>
-  <header>
-    <h1>Product List</h1>
+  <header>  
+    <div class="header-container">
+      <div class="header-title">
+        <h1>Product List</h1>
+      </div>        
+      <div class="header-action">
+        <div class="action-select">
+          <select id="action">
+            <option value="massdeleteaction">Mass Delete Action</option>
+            <option value="singledeleteaction">Single Delete Action</option>              
+            <option value="donothing">Do Nothing</option>            
+          </select>       
+        </div>
+        <div id="action-button">
+          <button id="actionbutton" type="button" >Apply</button> 
+        </div>
+      </div>
+    </div>  
   </header>
 
   <div id="main">
@@ -69,7 +89,9 @@
       </div>
   </div>
 
-  <footer></footer>
+  <footer>
+    
+  </footer>
 </body>
 
 </html>
