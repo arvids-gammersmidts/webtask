@@ -15,7 +15,7 @@ body {
 }
 
 header {
-  height: 80px;
+  min-height: 80px;
   margin: 0 30px;
 }
 
