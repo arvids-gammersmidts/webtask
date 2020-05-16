@@ -11,8 +11,8 @@ nav {
     padding: $nav-padding;
     list-style: none;
 
-    li { 
-      display: inline-block; 
+    li {
+      display: inline-block;
     }
   }
 
@@ -39,7 +39,9 @@ nav {
     position: relative;
     flex: 1 0 21%;
 
-    &:hover { background-color: $red-background;}
+    &:hover {
+      background-color: $red-background;
+    }
 
     input {
       position: absolute;
@@ -56,7 +58,7 @@ nav {
           margin-left: 20px;
           background-color: $red-background;
         }
-      }  
+      }
     }
 
     .price {
