@@ -23,7 +23,7 @@ nav a {
     margin-top: 20px;
     margin-bottom: 0;
     position: relative;
-    flex: 1 0 21%; }
+    flex: 1 0 20%; }
     .product-container .product:hover {
       background-color: rgba(185, 62, 62, 0.486); }
     .product-container .product input {

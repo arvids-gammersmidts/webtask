@@ -1,0 +1,30 @@
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  border-bottom: 1px solid;
+
+  .header-content_right {
+    display: flex;
+    align-items: center;
+
+    .delete-select {
+      padding: 5px;
+    }
+
+    .btn-apply {
+      margin-left: 10px;
+      padding: 5px;
+    }
+
+    .btn-save {
+      padding: 5px 15px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .header-content {
+    flex-wrap: wrap;
+  }
+}

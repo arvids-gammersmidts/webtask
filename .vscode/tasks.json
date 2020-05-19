@@ -1,14 +1,26 @@
 // Sass configuration
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
-    "version": "2.0.0",
-    "tasks": [
-      {
-        "label": "Sass Compile",
-        "type": "shell",
-        "command": "node-sass style/styles.scss style/styles.css",
-        "group": "build"
-      }
-    ]
-  }
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Sass Compile",
+      "type": "shell",
+      "command": "node-sass style/styles.scss style/styles.css",
+      "group": "build"
+    },
+    {
+      "label": "Sass Compile Header",
+      "type": "shell",
+      "command": "node-sass style/header_footer.scss style/header_footer.css",
+      "group": "build"
+    },
+    {
+      "label": "Sass Compile AddProduct",
+      "type": "shell",
+      "command": "node-sass style/addproduct.scss style/addproduct.css",
+      "group": "build"
+    }
+  ]
+}
