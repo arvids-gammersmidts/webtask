@@ -1,8 +1,4 @@
-// h1 {
-//   padding: 20px;
-// }
-
-$nav-padding: 6px; // adsdasd
+$nav-padding: 6px;
 $red-background: rgba(185, 62, 62, 0.486);
 
 nav {
@@ -28,16 +24,15 @@ nav {
   flex-wrap: wrap;
 
   .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 20%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    text-align: center;
     font-family: arial;
-    padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 0;
+    padding: 1.25em;
+    margin: 1.25em 1.25em 0 1.25em;
     position: relative;
-    flex: 1 0 21%;
 
     &:hover { background-color: $red-background;}
 
@@ -61,7 +56,7 @@ nav {
 
     .price {
       color: grey;
-      font-size: 22px;
+      font-size: 1.5em;
     }
 
     .product-attribute {
@@ -69,3 +64,83 @@ nav {
     }
   }
 }
+
+
+
+@media (max-width: 450px) {
+  .form-group {
+    flex-wrap: wrap;
+  }
+}
+
+.add-product {
+  margin: 20px 20px 0 20px;
+
+  .container {
+    display: flex;
+  }
+}
+
+#type {
+  min-width: 166px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  .group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    clear: left;
+    display: block;
+    float: left;
+  }
+
+  select, input {
+    clear: right;
+    display: block;
+    float: left;
+  }
+}
+
+
+
+@media (max-width: 450px) {
+  .header-content {
+    flex-wrap: wrap;
+  }
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  border-bottom: 1px solid;
+
+  .right {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.delete-select {
+  padding: 5px;
+}
+
+.btn{
+
+  &.apply {
+    margin-left: 10px;
+    padding: 5px;
+  }
+
+  &.save {
+    padding: 5px 15px; 
+  }
+}
+
