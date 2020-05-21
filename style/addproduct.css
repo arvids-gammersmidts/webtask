@@ -1,0 +1,46 @@
+.main-add-product {
+  margin: 0 20px;
+}
+
+.add-product_container {
+  margin-top: 20px;
+  max-width: 300px;
+}
+
+.form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 450px) {
+  .form-group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+#type {
+  min-width: 166px;
+}
+
+form {
+  display: block;
+}
+
+form form label {
+  clear: left;
+  display: block;
+  float: left;
+}
+
+form select, form input {
+  clear: right;
+  display: block;
+  float: left;
+}
+/*# sourceMappingURL=addproduct.css.map */
