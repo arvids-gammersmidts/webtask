@@ -7,7 +7,13 @@
       {
         "label": "Sass Compile",
         "type": "shell",
-        "command": "node-sass styles.scss styles.css",
+        "command": "node-sass ./style/scss/addproduct.scss ./style/addproduct.css ./style/scss/productlist.scss ./style/productlist.css",
+        "group": "build"
+      },
+      {
+        "label": "Sass Compile",
+        "type": "shell",
+        "command": "node-sass ./style/scss/productlist.scss ./style/productlist.css",
         "group": "build"
       }
     ]
