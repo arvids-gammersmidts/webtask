@@ -1,2 +1,8 @@
-SCSS/*.css.map
-SCSS/*.css
+/SCSS/*.map
+/SCSS/*.css
+style/SCSS/addproduct.css
+style/SCSS/addproduct.css.map
+style/SCSS/index.css
+style/SCSS/index.css.map
+style/SCSS/productlist.css
+style/SCSS/productlist.css.map
