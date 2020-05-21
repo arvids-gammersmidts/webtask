@@ -9,5 +9,6 @@ $red-background: rgba(185, 62, 62, 0.486);
 }
 
 // Import Scss
-@import 'headerFooter';
-@import 'siteContent';
+@import 'header';
+@import 'footer';
+@import '../product/product.scss';
