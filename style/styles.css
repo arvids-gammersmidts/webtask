@@ -10,6 +10,9 @@ nav a {
   padding: 6px 12px;
   text-decoration: none; }
 
+.product-list {
+  max-width: 100%; }
+
 .product-container {
   display: flex;
   flex-wrap: wrap; }
@@ -24,8 +27,6 @@ nav a {
     margin-bottom: 0;
     position: relative;
     flex: 1 0 21%; }
-    .product-container .product:hover {
-      background-color: rgba(185, 62, 62, 0.486); }
     .product-container .product input {
       position: absolute;
       top: 10px;
@@ -35,10 +36,35 @@ nav a {
       .product-container .product label.top-label {
         margin-left: 20px; }
         .product-container .product label.top-label.red {
-          margin-left: 20px;
-          background-color: rgba(185, 62, 62, 0.486); }
+          margin-left: 20px; }
     .product-container .product .price {
       color: grey;
       font-size: 22px; }
     .product-container .product .product-attribute {
       text-transform: uppercase; }
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  border-bottom: 1px solid; }
+  .header-content .header-content_right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 0 0;
+    margin: 0 0 0 0; }
+
+@media (max-width: 450px) {
+  .header-content {
+    flex-wrap: wrap; } }
+
+.delete-select {
+  padding: 5px; }
+
+.btn-apply {
+  margin-left: 10px;
+  padding: 5px; }
+
+.btn-save {
+  padding: 5px 15px; }
