@@ -112,7 +112,8 @@
   }
 }
 
-.form-container form .form-group input, .form-container form .form-group select {
+.form-container form .form-group input,
+.form-container form .form-group select {
   border: 1px solid black;
 }
 
