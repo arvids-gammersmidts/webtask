@@ -1,0 +1,40 @@
+$marginSize : 20px;
+.main-add-product {
+  margin: 0 $marginSize;
+}
+
+.add-product_container {
+  margin-top: $marginSize;
+  max-width: 300px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $marginSize;
+}
+
+@media (max-width: 450px) {
+  .form-group {
+    flex-wrap: wrap;
+  }
+}
+
+#type {
+  min-width: 166px;
+}
+
+form {
+  display: block;
+  form label {
+    clear: left;
+    display: block;
+    float: left;
+  }
+
+  select, input {
+    clear: right;
+    display: block;
+    float: left;
+  }
+}
