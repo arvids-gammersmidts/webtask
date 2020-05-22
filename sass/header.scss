@@ -10,9 +10,8 @@
   .header-content_right {
     display: flex;
     align-items: center;
-    @include mobile {
-      padding-bottom: 20px;
-    }
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .delete-select {
     padding: 5px;
