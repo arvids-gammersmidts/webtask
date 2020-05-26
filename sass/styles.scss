@@ -1,0 +1,14 @@
+
+//Variables
+$input-width: 170px; // Product add input fileds width
+$red-background: rgba(185, 62, 62, 0.486); 
+
+//Mixins
+@mixin mobile {
+  @media (max-width: 576px) { @content; }
+}
+
+// Import Scss
+@import 'header';
+@import 'footer';
+@import '../product/product.scss';

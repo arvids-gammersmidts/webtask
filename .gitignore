@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /SCSS/*.map
 /SCSS/*.css
 style/SCSS/addproduct.css
@@ -6,3 +7,6 @@ style/SCSS/index.css
 style/SCSS/index.css.map
 style/SCSS/productlist.css
 style/SCSS/productlist.css.map
+=======
+*.css
+>>>>>>> 05f361d0d4d26f19c07865659c72f6b88b515194
