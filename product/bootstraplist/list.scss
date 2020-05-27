@@ -1,32 +1,29 @@
 .product-header {
-  border-bottom: 0;
+  border-bottom: 1px solid black;
 
-  .product-header-content{
-    border-bottom: 1px solid black;
-    h1{
+  .product-header-content {
+    h1 {
       margin-top: 20px;
-      margin-bottom: 20px;
     }
-
-    button{
+  }
+  .header-content_right {
+    button {
       margin-left: 10px;
-      margin-right: 10px;
     }
   }
 }
 
-
-
 .product-b4 {
-  
   .product {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
     font-family: arial;
     padding: 20px;
-    margin: 10px;
+    margin: 10px 0 10px 0;
     position: relative;
-    &:hover { background-color: $red-background;}
+    &:hover {
+      background-color: $red-background;
+    }
 
     input {
       position: absolute;
@@ -43,7 +40,7 @@
           margin-left: 20px;
           background-color: $red-background;
         }
-      }  
+      }
     }
     .price {
       color: grey;
@@ -54,4 +51,3 @@
     }
   }
 }
-

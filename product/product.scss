@@ -1,11 +1,8 @@
-
 .product {
-  background-color: blue;
+  background-color: white;
 }
 
-@import 'add/add.scss';
-@import 'list/list.scss';
-@import 'bootstrapadd/add.scss';
-@import 'bootstraplist/list.scss';
-
-
+@import "add/add.scss";
+@import "list/list.scss";
+@import "bootstrapadd/add.scss";
+@import "bootstraplist/list.scss";
