@@ -1,0 +1,62 @@
+header {
+    padding-top: 20px; margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 2px #000;
+    
+    .header-left-content {
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        
+        .header-item {
+            margin-right: 20px;
+            align-self: center;
+            
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .header-right-content {
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        
+        .header-item {
+            margin-left: 20px;
+            align-self: center;
+            
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+    
+    button {
+        padding: 8px 18px;
+        background: #000; color: #fff;
+        border: solid 2px #000; border-radius: 10px;
+        cursor: pointer;
+        
+        &:hover {
+            background: #a044ff;
+        }
+    }
+    select {
+        height: 33px;
+        border: solid 2px #000; border-radius: 10px;
+        background: #fff;
+    }
+    
+    #btn-cancel {
+        background: #ededed; color: #000;
+        border: solid 2px #ededed;
+        
+        &:hover {
+            border-color: #000;
+        }
+    }
+}

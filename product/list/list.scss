@@ -1,47 +1,86 @@
+.product-view {
+    margin: 10px 20px 0 20px;
+    display: flex;
+    align-items: center;
+    
+    p {
+        margin-right: 10px;
+    }
+}
+
 .product-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  @include mobile {
-    flex-direction: column;
-  }
-
-  .product {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    text-align: center;
-    font-family: arial;
-    padding: 20px;
-    margin: 20px;
-    position: relative;
-    min-width: 200px;
-    @include mobile {
-      margin: 20px auto;
-    }
-    &:hover { background-color: $red-background;}
-
-    input {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-    }
-
-    label {
-      margin-left: 10px;
-
-      &.top-label {
-        margin-left: 20px;
-        &.red {
-          margin-left: 20px;
-          background-color: $red-background;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    .product {
+        position: relative;
+        margin: 10px 20px; padding: 10px 20px;
+        width: 100%;
+        border: solid 2px #bababa; border-radius: 10px;
+        background: #fff;
+        
+        &:hover, &.checked {
+            border-color: #a044ff;
         }
-      }  
+        
+        .checkbox {
+            position: absolute;
+            top: 10px; left: 10px;
+        }
+        
+        .product-item {
+            text-align: center;
+        }
     }
-    .price {
-      color: grey;
-      font-size: 22px;
+    
+    &.grid {
+        .product {
+            flex-basis: calc((100%/5) - 40px);
+
+            @include small-web {
+                flex-basis: calc((100%/4) - 40px);
+            }
+
+            @include tablet {
+                flex-basis: calc((100%/3) - 40px);
+            }
+
+            @include small-tablet {
+                flex-basis: calc((100%/2) - 40px);
+            }
+
+            @include mobile {
+                flex-basis: calc((100%/1) - 40px);
+            }
+            
+            .product-item {
+                margin: 10px 0;
+            }
+        }
     }
-    .product-attribute {
-      text-transform: uppercase;
+    &.list {
+        .product {
+            margin: 5px 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-basis: calc(100% - 40px);
+            
+            &:first-child {
+                margin-top: 10px;
+            }
+            &:last-child {
+                margin-bottom: 10px;
+            }
+            
+            .checkbox {
+                top: 50%; left: 10px;
+                transform: translateY(-50%);
+            }
+            
+            .product-attribute {
+                display: none;
+            }
+        }
     }
-  }
 }

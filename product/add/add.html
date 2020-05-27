@@ -1,77 +1,162 @@
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <meta name="description" content="WebTask VATP course">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <meta name="author" content="Arturs">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Add</title>
-  <link rel="stylesheet" type="text/css" href="../../style/styles.css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title -->
+    <title>Product list</title>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="author" content="Kristers Dzintars">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style sheets -->
+    <link rel="stylesheet" type="text/css" href="../../style/styles.css">
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../script/script.js"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
+<header>
+    <div class="header-left-content">
+        <h1 class="header-item">Add product</h1>
+    </div>
+    <div class="col header-right-content">
+        <div class="header-item">
+            <a href="../list/list.html"><button id="btn-cancel">Cancel</button></a>
+        </div>
+        <button id="btn-submit" class="header-item">Save</button>
+    </div>
+</header>
+
 <body>
-  <header>
-    <div class="header-content">
-      <h1>Product Add</h1>
-      <div class="header-content_right">
-        <button class="btn-save" type="submit" name="btn_save" value="save">Save</button>
-      </div>
+    <div class="form-container">
+        <form>
+            <div class="form-group">
+                <label for="sku">Product SKU:</label><br>
+                <input type="text" id="sku" name="sku">
+            </div>
+            <div class="form-group">
+                <label for="title">Product title:</label><br>
+                <input type="text" id="title" name="title">
+            </div>
+            <div class="form-group">
+                <label for="price">Product price:</label><br>
+                <div class="form-input">
+                    <input class="short-input" type="text" id="price" name="price">
+                    <p class="input-attribute">EUR</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <p>Product type:</p>
+                
+                <div class="type-select">
+                    <input type="radio" id="disc" name="type" />
+                    <label for="disc">DVD Disc</label>
+                </div>
+                <div class="type-select">
+                    <input type="radio" id="furniture" name="type" />
+                    <label for="furniture">Furtniture</label>
+                </div>
+                <div class="type-select">
+                    <input type="radio" id="book" name="type" />
+                    <label for="book">Book</label>
+                </div>
+            </div>
+            <div class="form-group margin-top">
+                <label for="size">Product size:</label><br>
+                <div class="form-input">
+                    <input class="short-input" type="text" id="size" name="size">
+                    <p class="input-attribute">MB</p>
+                </div>
+            </div>
+            <div class="form-group margin-top">
+                <label for="height">Product height:</label><br>
+                <div class="form-input">
+                    <input class="short-input" type="text" id="height" name="height">
+                    <p class="input-attribute">mm</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="width">Product width:</label><br>
+                <div class="form-input">
+                    <input class="short-input" type="text" id="width" name="width">
+                    <p class="input-attribute">mm</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="length">Product length:</label><br>
+                <div class="form-input">
+                    <input class="short-input" type="text" id="length" name="length">
+                    <p class="input-attribute">mm</p>
+                </div>
+            </div>
+            <div class="form-group margin-top">
+                <label for="weight">Product weight:</label><br>
+                <div class="form-input">
+                    <input class="short-input" type="text" id="weight" name="weight">
+                    <p class="input-attribute">Kg</p>
+                </div>
+            </div>
+        </form>
     </div>
-  </header>
+    
+    
+    
+    
+    
+        <div class="add-product_container">
+            <form>
+                <!--<div class="form-group">
+                    <label for="sku">Sku:</label>
+                    <input type="text" id="sku" name="sku">
+                </div>
 
-  <main class="add-product">
-    <div class="add-product_container">
-      <form>
-        <div class="form-group">
-        <label for="sku">Sku:</label>
-        <input type="text" id="sku" name="sku">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="Price">Price:</label>
+                    <input type="text" id="Price" name="Price">
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Type switcher:</label>
+                    <select id="type">
+                        <option value="dvd">DVD</option>
+                        <option value="furniture">Furniture</option>
+                        <option value="book">Book</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Size">Size:</label>
+                    <input type="text" id="Size" name="Size">
+                </div>
+
+                <div class="form-group">
+                    <label for="Height">Height:</label>
+                    <input type="text" id="Height" name="Height">
+                </div>
+
+                <div class="form-group">
+                    <label for="Width">Width:</label>
+                    <input type="text" id="Width" name="Width">
+                </div>
+
+                <div class="form-group">
+                    <label for="Length">Length:</label>
+                    <input type="text" id="Length" name="Length">
+                </div>
+
+                <div class="form-group">
+                    <label for="Weight">Weight:</label>
+                    <input type="text" id="Weight" name="Weight">
+                </div>-->
+            </form>
         </div>
+</body>
 
-        <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-        </div>
-
-        <div class="form-group">
-        <label for="Price">Price:</label>
-        <input type="text" id="Price" name="Price">
-        </div>
-
-        <div class="form-group">
-        <label for="type">Type switcher:</label>
-        <select id="type">
-          <option value="dvd">DVD</option>
-          <option value="furniture">Furniture</option>
-          <option value="book">Book</option>
-        </select>
-        </div> 
-
-        <div class="form-group">
-        <label for="Size">Size:</label>
-        <input type="text" id="Size" name="Size">
-        </div>
-
-        <div class="form-group">
-        <label for="Height">Height:</label>
-        <input type="text" id="Height" name="Height">
-        </div>
-
-        <div class="form-group">
-        <label for="Width">Width:</label>
-        <input type="text" id="Width" name="Width">
-        </div>
-
-        <div class="form-group">
-        <label for="Length">Length:</label>
-        <input type="text" id="Length" name="Length">
-        </div>
-
-        <div class="form-group">
-        <label for="Weight">Weight:</label>
-        <input type="text" id="Weight" name="Weight">
-        </div>
-      </form>
-    </div>
-  </main>
-  
-  <footer></footer>
-</body></html>
+</html>

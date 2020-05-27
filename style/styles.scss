@@ -1,0 +1,31 @@
+//Variables
+$input-width: 170px; // Product add input fileds width
+$red-background: rgba(185, 62, 62, 0.486);
+
+//Mixins
+@mixin mobile {
+  @media (min-width: 320px) and (max-width: 480px) { @content; }
+}
+@mixin small-tablet {
+  @media (min-width: 481px) and (max-width: 780px) { @content; }
+}
+@mixin tablet {
+  @media (min-width: 781px) and (max-width: 1024px) { @content; }
+}
+@mixin small-web {
+  @media (min-width: 1025px) and (max-width: 1366px) { @content; }
+}
+
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    background: #ededed;
+}
+
+// Import scss
+@import "header";
+@import "../product/add/add.scss";
+@import "../product/list/list.scss";

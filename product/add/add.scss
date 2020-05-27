@@ -1,22 +1,58 @@
-
-.add-product {
-  margin: 20px 20px 0 20px;
-
-  form {
-    max-width: 400px;
-
-    .form-group {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 10px;
-      input, select {
-        width: $input-width;
-      }
-      @include mobile {
-        flex-direction: column;
-      }
+.form-container {
+    margin: 20px;
+    
+    form {
+        margin: 0 auto;
+        min-width: 280px; max-width: 500px;
+        
+        .form-group {
+            margin: 10px 0;
+            
+            &.margin-top {
+                margin-top: 30px;
+            }
+            
+            > input {
+                padding: 10px 15px;
+                width: 100%;
+                border: solid 2px #ababab; border-radius: 10px;
+                outline: none;
+                
+                &:focus, &:hover {
+                    border-color: #a044ff;
+                }
+            }
+            
+            .form-input {
+                display: flex;
+                align-items: center;
+                
+                .short-input {
+                    padding: 10px 15px; margin-right: 10px;
+                    width: 25%;
+                    border: solid 2px #ababab; border-radius: 10px;
+                    outline: none;
+                    
+                    &:focus, &:hover {
+                        border-color: #a044ff;
+                    }
+                }
+            }
+            
+            > .type-select {
+                padding: 10px 15px; margin: 0 10px 10px 0;
+                display: inline-block;
+                background: #fff;
+                border: solid 2px #ababab; border-radius: 10px;
+                
+                &:hover, &.checked {
+                    border-color: #a044ff;
+                }
+                
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
     }
-  }
 }
-
-
