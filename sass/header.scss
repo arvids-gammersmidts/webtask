@@ -4,6 +4,18 @@
     flex-wrap: wrap;
   }
 }
+@media only screen and (max-width: 992px){
+  .navbar-expand-lg {
+    .container {
+      padding: 0 10px!important;
+    }
+  }
+}
+.navbar {
+  .container {
+    padding: 0 20px;
+  }
+}
 .header-content {
   display: flex;
   justify-content: space-between;
