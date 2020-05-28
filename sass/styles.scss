@@ -2,10 +2,40 @@
 //Variables
 $input-width: 170px; // Product add input fileds width
 $red-background: rgba(185, 62, 62, 0.486); 
+$ackent-color: #008b8b;
 
 //Mixins
 @mixin mobile {
   @media (max-width: 576px) { @content; }
+}
+
+.home-page-container
+{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .menu-item {
+    
+    text-align:center;
+    svg 
+    {
+      margin: 20px auto 5px auto;
+      
+      color:$ackent-color;
+    }
+    a
+    {
+      text-decoration: none;
+      color:$ackent-color;
+    }
+  }
+  
 }
 
 // Import Scss

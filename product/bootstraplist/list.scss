@@ -15,39 +15,98 @@
   }
 }
 
-
-
-.product-b4 {
-  
+.product-b4 {  
   .product {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
     font-family: arial;
     padding: 20px;
     margin: 10px;
     position: relative;
-    &:hover { background-color: $red-background;}
+    background-color:#E6E7EB;
+    &:hover { background-color: #C3C4C9;}
 
-    input {
+    .input-wrap
+    {
       position: absolute;
       top: 10px;
       left: 10px;
-    }
+    
+      .input-container
+      {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    
+        input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
 
-    label {
-      margin-left: 10px;
+          &:checked ~ .checkmark {
+            background-color: $ackent-color;
+          }
 
-      &.top-label {
-        margin-left: 20px;
-        &.red {
-          margin-left: 20px;
-          background-color: $red-background;
+          &:checked ~ .checkmark:after {
+            display: block;
+          }
         }
-      }  
+
+        .checkmark 
+        {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 20px;
+          width: 20px;
+          background-color: #ffffff;
+          border: 1px solid $ackent-color;
+
+          &:after {
+            content: "";
+            position: absolute;
+            display: none;           
+          }          
+        }  
+        .checkmark:after 
+        {
+          left: 6px;
+          top: 2px;
+          width: 7px;
+          height: 10px;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }       
+      }
     }
+    
+    h4 
+    {
+      color: $ackent-color;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    h5 
+    {
+      margin-top:20px;
+    }
+
     .price {
-      color: grey;
-      font-size: 22px;
+      font-size: 20px;
+      margin-bottom:10px;
     }
     .product-attribute {
       text-transform: uppercase;
