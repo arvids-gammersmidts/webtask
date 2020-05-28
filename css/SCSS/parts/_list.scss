@@ -1,94 +1,93 @@
-.container {
-  padding: 0 25px;
+.list-container {
 
-  @media (max-width: 540px) {
-    padding: 0 10px;
-  }
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px 0 20px;
-
-  @media (max-width: 540px) {
-    flex-direction: column;
-    align-items: start;
-  }
-
-  h1 {
-    margin: 5px 0;
-  }
-
-  select {
-    border: 1px solid black;
-  }
-
-  button {
-    padding: 0 20px;
-    margin-left: 10px;
-    border: 1px solid black;
-    font-size: 0.75rem;
-    box-shadow: 2px 2px black;
-    background-color: white;
-    transition: all 1s;
-
-    &:hover {
-      transform: scale(1.1);
-      transition: all 1s;
-    }
+  .container {
+    padding: 0 25px;
 
     @media (max-width: 540px) {
-      margin: 10px 0;
+      padding: 0 10px;
     }
   }
-}
 
-hr {
-  margin: 5px 20px 0;
-}
+  .header-container {
+    margin:0 25px;
 
-.product-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 20px;
-  justify-content: space-between;
-
-  .product {
-    text-align: center;
-    font-family: arial;
-    padding: 20px;
-    margin: 0 20px 20px;
-    position: relative;
-    flex: 1 0 19%;
-    border: 1px solid black;
-    min-width: 250px;
-
-    @media (max-width: 540px) {
-      min-width: 175px;
+    h1 {
+      margin:0;
     }
 
-    input {
-      position: absolute;
-      top: 10px;
-      left: 10px;
+    select {
+      border: 1px solid $black;
+      border-radius: 0;
     }
 
-    label {
+    button {
+      padding: 0 20px;
       margin-left: 10px;
-    }
+      border: 1px solid $black;
+      font-size: 0.75rem;
+      box-shadow: 2px 2px $black;
+      background-color: $white;
+      transition: all 1s;
 
-    .price {
-      font-size: 22px;
-    }
+      &:hover {
+        transform: scale(1.1);
+        transition: all 1s;
+      }
 
-    .product-attribute {
-      text-transform: uppercase;
+      @media (max-width: 540px) {
+        margin: 10px 0;
+      }
     }
   }
-}
 
-.footer-container {
-  padding: 20px;
+  hr {
+    margin: 5px 25px 0;
+  }
+
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    justify-content: space-between;
+
+    .product {
+      text-align: center;
+      font-family: arial;
+      padding: 20px;
+      margin: 0 25px 20px;
+      position: relative;
+      flex: 1 0 18%;
+      border: 1px solid $black;
+      min-width: 250px;
+
+      @media (max-width: 540px) {
+        min-width: 175px;
+      }
+
+      input {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      label {
+        margin-left: 10px;
+      }
+
+      .price {
+        font-size: 22px;
+      }
+
+      .product-attribute {
+        text-transform: uppercase;
+      }
+    }
+  }
+  footer {
+    padding:25px 0;
+    
+    .btn-return {
+      margin:25px;
+    }
+  }
 }

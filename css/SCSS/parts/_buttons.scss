@@ -1,0 +1,11 @@
+.btn-return {
+    text-decoration: none;
+    color: $blue;
+    border: 1px solid $blue;
+    padding:5px 20px;
+
+    &:hover {
+        background-color: $blue;
+        color:$white;
+    }
+}

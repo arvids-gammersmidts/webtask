@@ -1,18 +1,22 @@
-.nav-container {
-  a {
-    display: inline-block;
-    padding: 5px 0;
-    text-decoration: none;
-    margin: 20px 20px 5px 0;
-    overflow: auto;
-    text-align: center;
+.main-nav {
+  .nav-item {
     border-bottom:2px solid transparent;
-    color: $btn-blue;
+    color: $blue !important;
     text-transform: uppercase;
     font-weight: 500;
+    padding:0 !important;
+    margin-left:20px !important;
+
+    @media (max-width:768px) {
+      margin-bottom:20px;
+      overflow: auto;
+      width: 150px;
+      margin-left: auto !important;
+      margin-right: auto;
+    }
 
     &:hover {
-      border-bottom-color: $btn-blue;
+      border-bottom-color:$blue;
     }
   }
   hr {
