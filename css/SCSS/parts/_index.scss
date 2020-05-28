@@ -1,22 +1,30 @@
 .main-nav {
-  .nav-item {
-    border-bottom:2px solid transparent;
-    color: $blue !important;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding:0 !important;
-    margin-left:20px !important;
+  .navbar {
+    padding: 20px 0 0;
 
-    @media (max-width:768px) {
-      margin-bottom:20px;
-      overflow: auto;
-      width: 150px;
-      margin-left: auto !important;
-      margin-right: auto;
+    .navbar-brand {
+      padding:0;
+      margin: 0 !important;
     }
+    .nav-item {
+      border-bottom:2px solid transparent;
+      color: $blue !important;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding:0 !important;
+      margin-left:20px !important;
 
-    &:hover {
-      border-bottom-color:$blue;
+      @media (max-width:768px) {
+        margin-bottom:20px;
+        overflow: auto;
+        width: 150px;
+        margin-left: auto !important;
+        margin-right: auto;
+      }
+
+      &:hover {
+        border-bottom-color:$blue;
+      }
     }
   }
   hr {

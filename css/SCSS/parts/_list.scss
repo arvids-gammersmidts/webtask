@@ -60,6 +60,10 @@
       border: 1px solid $black;
       min-width: 250px;
 
+      &:hover {
+        background: $grey;
+      }
+
       @media (max-width: 540px) {
         min-width: 175px;
       }
