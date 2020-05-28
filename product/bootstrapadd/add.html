@@ -15,10 +15,12 @@
 
 <body>
   <header>
-    <div class="header-content">
-      <h1>Product Add</h1>
-      <div class="header-content_right">
-        <button class="btn btn-primary" type="submit" name="btn_save" value="save">Save</button>
+    <div class="container">
+      <div class="header-content">
+        <h1>Product Add</h1>
+        <div class="header-content_right">
+          <button class="btn btn-primary" type="submit" name="btn_save" value="save">Save</button>
+        </div>
       </div>
     </div>
   </header>
@@ -26,12 +28,9 @@
   <main class="add-product-b4">
     <div class="container">
       <form>
-        <div class="alert alert-danger" role="alert">
-          A simple danger alert—check it out!
-        </div>
         <div class="form-group row">
           <label for="sku" class="col-sm-3 col-form-label">Sku:</label>
-          <div class="col-sm-9">
+          <div class="col-sm-9 col-lg-5">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <span class="input-group-text">XDS-FGS-</span>
@@ -46,21 +45,21 @@
 
         <div class="form-group row">
           <label for="name" class="col-sm-3 col-form-label">Name:</label>
-          <div class="col-sm-9">
+          <div class="col-sm-9 col-lg-5">
             <input type="text" class="form-control" id="name" name="name">
           </div>
         </div>
 
         <div class="form-group row">
           <label for="Price" class="col-sm-3 col-form-label">Price:</label>
-          <div class="col-sm-9">
+          <div class="col-sm-9 col-lg-5">
             <input type="text" class="form-control" id="Price" name="Price">
           </div>
         </div>
 
         <div class="form-group row">
           <label for="type" class="col-sm-3 col-form-label">Type switcher:</label>
-          <div class="col-sm-9">
+          <div class="col-sm-9 col-lg-5">
             <select id="type" class="form-control">
               <option value="dvd">DVD</option>
               <option value="furniture">Furniture</option>
@@ -69,29 +68,39 @@
           </div>
         </div>
 
-        <div class="form-group">
-          <label for="Size">Size:</label>
-          <input type="text" id="Size" name="Size">
+        <div class="form-group row">
+          <label for="Size" class="col-sm-3 col-form-label">Size:</label>
+          <div class="col-sm-9 col-lg-5">
+            <input type="text" class="form-control" id="Size" name="Size">
+          </div>
         </div>
 
-        <div class="form-group">
-          <label for="Height">Height:</label>
-          <input type="text" id="Height" name="Height">
+        <div class="form-group row">
+          <label for="Height" class="col-sm-3 col-form-label">Height:</label>
+          <div class="col-sm-9 col-lg-5">
+            <input type="text" class="form-control" id="Height" name="Height">
+          </div>
         </div>
 
-        <div class="form-group">
-          <label for="Width">Width:</label>
-          <input type="text" id="Width" name="Width">
+        <div class="form-group row">
+          <label for="Width" class="col-sm-3 col-form-label">Width:</label>
+          <div class="col-sm-9 col-lg-5">
+            <input type="text" class="form-control" id="Width" name="Width">
+          </div>
         </div>
 
-        <div class="form-group">
-          <label for="Length">Length:</label>
-          <input type="text" id="Length" name="Length">
+        <div class="form-group row">
+          <label for="Length" class="col-sm-3 col-form-label">Length:</label>
+          <div class="col-sm-9 col-lg-5">
+            <input type="text" class="form-control" id="Length" name="Length">
+          </div>
         </div>
 
-        <div class="form-group">
-          <label for="Weight">Weight:</label>
-          <input type="text" id="Weight" name="Weight">
+        <div class="form-group row">
+          <label for="Weight" class="col-sm-3 col-form-label">Weight:</label>
+          <div class="col-sm-9 col-lg-5">
+            <input type="text" class="form-control" id="Weight" name="Weight">
+          </div>
         </div>
       </form>
     </div>

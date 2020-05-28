@@ -10,11 +10,9 @@
       justify-content: space-between;
       margin-bottom: 10px;
       input, select {
-        width: $input-width;
+        width: 200px;
       }
-      @include mobile {
-        flex-direction: column;
-      }
+  
     }
   }
 }

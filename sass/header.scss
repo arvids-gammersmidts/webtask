@@ -1,17 +1,29 @@
 
+@media only screen and (max-width: 600px){
+  .header-content {
+    flex-wrap: wrap;
+  }
+}
 .header-content {
   display: flex;
   justify-content: space-between;
-  margin: 0 20px;
+  margin: 0 10px 20px 10px;
   border-bottom: 1px solid;
-  @include mobile {
-    flex-wrap: wrap;
+
+  h1
+  {
+    margin: 0px;
+    line-height: 2;
   }
   .header-content_right {
     display: flex;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+
+    select {
+      margin-right: 10px;
+    }
   }
   .delete-select {
     padding: 5px;
