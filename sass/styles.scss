@@ -1,3 +1,5 @@
+//Global
+
 
 //Variables
 $input-width: 170px; // Product add input fileds width
@@ -9,6 +11,6 @@ $red-background: rgba(185, 62, 62, 0.486);
 }
 
 // Import Scss
-@import 'header';
-@import 'footer';
+@import './header.scss';
+@import './footer.scss';
 @import '../product/product.scss';

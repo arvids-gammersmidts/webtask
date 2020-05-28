@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>Product List</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,18 +16,42 @@
 <body>
   <header>
     <div class="product-header header-content container">
-      <div class="product-header-content">
-        <h1>Product List</h1>
-        <div class="header-content_right">
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option value="Mass Delete Action">Mass Delete Action</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-          <button type="submit" class="btn btn-primary">Apply</button>
+      <div class="row product-header-content">
+        <div class="col-lg-4 .col-md-6 col-sm-6 header-title">
+          <h1>Product List</h1>
+        </div>
+        <div class="col-lg-4 d-none d-lg-block d-xl-block header-nav">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../bootstrapadd/add.html">Product Add</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 header-content_right ">
+          <form class="form-inline justify-content-lg-end justify-content-sm-start ">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option value="Mass Delete Action">Mass Delete Action</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <button type="submit" class="btn btn-primary mr-0">Apply</button>
+          </form>
+        </div>
+        <div class="nav-small col d-xs-block d-sm-block d-md-block d-lg-none d-xl-none p-0">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../bootstrapadd/add.html">Product Add</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

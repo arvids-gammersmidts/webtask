@@ -1,30 +1,17 @@
 
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 20px;
-  border-bottom: 1px solid;
-  @include mobile {
-    flex-wrap: wrap;
+.header-content-container {
+  .product-header-content {
+    width: 100%;
   }
-  .header-content_right {
-    display: flex;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .delete-select {
-    padding: 5px;
-  }
-  
-  .btn-apply {
-    margin-left: 10px;
-    padding: 5px;
-  }
-  
-  .btn-save {
-    padding: 5px 15px; 
-  }
+}
+
+.header-nav {
+  margin: 20px 0;
+}
+
+.form-inline {
+  margin: 20px 0;
+  flex-flow: row !important;
 }
 
 
