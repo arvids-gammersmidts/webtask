@@ -38,6 +38,13 @@ $ackent-color: #008b8b;
   
 }
 
+.hidden {
+  display: none !important;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
 // Import Scss
 @import 'header';
 @import 'footer';

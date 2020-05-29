@@ -11,11 +11,16 @@
   <link rel="stylesheet" type="text/css" href="../../style/styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="add.js"></script>
 </head>
 
 <body>
@@ -23,8 +28,9 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-    
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -37,27 +43,28 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../bootstraplist/list.html">Product list</a>
-            </li> 
+            </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Old version
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="../add/add.html">Add product</a>
                 <a class="dropdown-item" href="../list/list.html">Product list</a>
               </div>
-            </li>          
+            </li>
           </ul>
         </div>
       </div>
-      
+
     </nav>
 
     <div class="container">
       <div class="header-content">
         <h1>Product Add</h1>
         <div class="header-content_right">
-          <button class="btn btn-primary" type="submit" name="btn_save" value="save">Save</button>
+          <button class="btn btn-primary" type="submit" id="addProductFormSubmit" name="btn_save" value="save">Save</button>
         </div>
       </div>
     </div>
@@ -65,7 +72,7 @@
 
   <main class="add-product-b4">
     <div class="container">
-      <form>
+      <form name="addProductForm">
         <div class="form-group row">
           <label for="sku" class="col-sm-3 col-form-label">Sku:</label>
           <div class="col-sm-9 col-lg-5">
@@ -73,7 +80,7 @@
               <div class="input-group-prepend">
                 <span class="input-group-text">XDS-FGS-</span>
               </div>
-              <input type="text" class="form-control" id="sku" aria-label="Sku">
+              <input type="text" class="form-control uppercase" id="sku" name="sku" required="true" aria-label="Sku" maxlength="8" minlength="8">
               <div class="input-group-append">
                 <span class="input-group-text">-GG</span>
               </div>
@@ -84,14 +91,14 @@
         <div class="form-group row">
           <label for="name" class="col-sm-3 col-form-label">Name:</label>
           <div class="col-sm-9 col-lg-5">
-            <input type="text" class="form-control" id="name" name="name">
+            <input type="text" class="form-control" id="name" name="name" required="true">
           </div>
         </div>
 
         <div class="form-group row">
           <label for="Price" class="col-sm-3 col-form-label">Price:</label>
           <div class="col-sm-9 col-lg-5">
-            <input type="text" class="form-control" id="Price" name="Price">
+            <input type="text" class="form-control" id="Price" name="Price" required="true">
           </div>
         </div>
 
@@ -106,35 +113,35 @@
           </div>
         </div>
 
-        <div class="form-group row">
+        <div class="form-group row dynamic-group dvd-group furniture-group" id="Size-group">
           <label for="Size" class="col-sm-3 col-form-label">Size:</label>
           <div class="col-sm-9 col-lg-5">
             <input type="text" class="form-control" id="Size" name="Size">
           </div>
         </div>
 
-        <div class="form-group row">
+        <div class="form-group row dynamic-group furniture-group" id="Height-group">
           <label for="Height" class="col-sm-3 col-form-label">Height:</label>
           <div class="col-sm-9 col-lg-5">
             <input type="text" class="form-control" id="Height" name="Height">
           </div>
         </div>
 
-        <div class="form-group row">
+        <div class="form-group row dynamic-group furniture-group" id="Width-group">
           <label for="Width" class="col-sm-3 col-form-label">Width:</label>
           <div class="col-sm-9 col-lg-5">
             <input type="text" class="form-control" id="Width" name="Width">
           </div>
         </div>
 
-        <div class="form-group row">
+        <div class="form-group row dynamic-group furniture-group" id="Length-group">
           <label for="Length" class="col-sm-3 col-form-label">Length:</label>
           <div class="col-sm-9 col-lg-5">
             <input type="text" class="form-control" id="Length" name="Length">
           </div>
         </div>
 
-        <div class="form-group row">
+        <div class="form-group row dynamic-group book-group" id="Weight-group">
           <label for="Weight" class="col-sm-3 col-form-label">Weight:</label>
           <div class="col-sm-9 col-lg-5">
             <input type="text" class="form-control" id="Weight" name="Weight">
