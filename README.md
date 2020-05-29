@@ -42,4 +42,10 @@ Mājasdarbs uz 28.05.2020 :
 
 *Pieturēties pie wireframe izkārtojumiem.
 
+Mājasdarbs uz 04.06.2020 :
+1) Pabeigt formas lauku validāciju. Izmantot validāciju kā skaitļu laukiem, teksta utt.
+2) Pārveidot esošo JS kodu uz Jquery un objectu struktūru.
+3) Formas laukiem salikt validācijas paziņojums. Var izmanot bootsrap paziņojumu stilu vai tamlīdzīgi.
+4) Savākt visus formas datus json objektā (Kādus tos sūtītu uz serveri)
+
 
