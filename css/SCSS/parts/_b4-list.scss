@@ -1,0 +1,60 @@
+.b4-list-container {
+
+    .b4-header {
+        border-bottom: 0;
+    
+        
+        h1{
+            margin:0;
+
+            @media (max-width:576px) {
+                font-size: 1.5rem;
+            }
+        }
+    
+    }
+    
+    .product-column {
+        padding-bottom: 15px;
+        padding-top: 15px;
+
+        .product {
+            text-align: center;
+            font-family: arial;
+            padding: 20px;
+            // margin-bottom: 10px;
+            position: relative;
+            border:1px solid $black;
+
+            &:hover {
+                background: $grey;
+            }
+
+            @media (max-width:576px) {
+                max-width: 250px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            input {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+
+            label {
+                margin-left: 10px;
+            }
+
+            .price {
+                color: grey;
+                font-size: 22px;
+            }
+
+            .product-attribute {
+                text-transform: uppercase;
+            }
+        }
+    }
+}  
+    

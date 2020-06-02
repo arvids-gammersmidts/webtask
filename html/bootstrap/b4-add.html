@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <meta charset="utf-8">
+  <meta name="description" content="WebTask VATP course" />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../../../css/styles.css">
+</head>
+
+<body>
+  <div class="container-fluid .b4-add-container">
+    <header>
+      <div class="container-lg b4-header pt-3">
+        <div class="row">
+          <div class="col-6 my-auto">
+            <h1>Product Add</h1>
+          </div>
+          <div class="col-6 text-right my-auto">
+            <button class="btn btn-sm btn-primary" type="submit" name="btn_save" value="save">Save</button>
+          </div>
+        </div>
+        <hr class="mt-sm-0">
+      </div>
+    </header>
+
+    <main>
+      <div class="container-lg">
+        <form>
+          <div class="row">
+            <div class="col-12">
+              <div class="alert alert-warning" role="alert">
+                Important! Please complete all fields of the form!
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-3">
+              <label for="sku" class="col-form-label">Sku:</label>
+            </div>
+            <div class="col-md-6 col-sm-9">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">XDS-FGS-</span>
+                </div>
+                <input type="text" class="form-control" autofocus id="sku" aria-label="Sku">
+                <div class="input-group-append">
+                  <span class="input-group-text">-GG</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-3">
+              <label for="name" class="col-form-label">Name:</label>
+            </div>
+            <div class="col-md-6 col-sm-9">
+              <input type="text" class="form-control" id="name" name="name">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-3">
+              <label for="Price" class="col-form-label">Price:</label>
+            </div>
+            <div class="col-md-6 col-sm-9">
+              <input type="text" class="form-control" id="Price" name="Price">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-3">
+              <label for="type" class="col-form-label">Type switcher:</label>
+            </div>
+            <div class="col-md-6 col-sm-9">
+              <select id="type" class="form-control">
+                <option value="dvd">DVD</option>
+                <option value="furniture">Furniture</option>
+                <option value="book">Book</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="container px-0 py-3">
+            <div class="form-group row">
+              <div class="col-sm-3">
+                <label for="Size" class="col-form-label">Size:</label>
+              </div>
+              <div class="col-md-6 col-sm-9">
+                <input type="text" class="form-control" id="Size" name="Size">
+              </div>
+            </div>
+          </div>
+
+          <div class="container px-0 py-3">
+            <div class="row form-group">
+              <div class="col-sm-3">
+                <label for="Height" class="col-form-label">Height:</label>
+              </div>
+              <div class="col-md-6 col-sm-9">
+                <input type="text" class="form-control" id="Height" name="Height">
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-sm-3">
+                <label for="Width" class="col-form-label">Width:</label>
+              </div>
+              <div class="col-md-6 col-sm-9">
+                <input type="text" class="form-control" id="Width" name="Width">
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-sm-3">
+                <label for="Lenght" class="col-form-label">Lenght:</label>
+              </div>
+              <div class="col-md-6 col-sm-9">
+                <input type="text" class="form-control" id="Lenght" name="Lenght">
+              </div>
+            </div>
+          </div>
+
+          <div class="container px-0 py-3">
+            <div class="form-group row">
+              <div class="col-sm-3">
+                <label for="Weight" class="col-form-label">Weight:</label>
+              </div>
+              <div class="col-md-6 col-sm-9">
+                <input type="text" class="form-control" id="Weight" name="Weight">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="container-fluid">
+      <div class="container-lg py-5">
+        <a class="btn-return" href="../../../index.html">Return to Home Page</a>
+      </div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>

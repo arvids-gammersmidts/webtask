@@ -1,0 +1,13 @@
+html {
+    font-family: 'Montserrat', sans-serif !important;
+
+    .container-fluid {
+        padding:0;
+
+        .container {
+            max-width: 1440px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

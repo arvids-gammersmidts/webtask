@@ -1,0 +1,18 @@
+.btn-return {
+    text-decoration: none !important;
+    color: $blue;
+    border: 1px solid $blue;
+    padding:5px 20px;
+    white-space: nowrap;
+
+    &:hover {
+        background-color: $blue;
+        color:$white;
+    }
+    @media (max-width:576px) {
+        font-size: 0.75rem;
+    }
+}
+.btn-primary {
+    background-color: $blue;
+}
