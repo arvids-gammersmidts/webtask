@@ -17,16 +17,11 @@ function toggleFormFields(fieldValue){
 }
 
   $('#addProductFormSubmit').click(function(){
-    console.log('clicked');
+
     let sku = $('#sku').val();
     let name = $('#name').val();
     let price = $('#price').val();
-    let size = $('#size').val();
-    let height = $('#height').val();
-    let width = $('#width').val();
-    let length = $('#length').val();
-    let weight = $('#weight').val();
-  
+
     let regexName = /^[a-zA-Z]+$/;
     let regexNumber = /^\d+$/;
 
@@ -64,6 +59,10 @@ function toggleFormFields(fieldValue){
     } else {
       $(errorMsg).hide();
     }
-  });
 
+  //Add form data to JSON object
+  let formData = JSON.stringify( $('.productForm').serializeArray() );
+  console.log( formData );
+  return false;
+  });
 });

@@ -20,7 +20,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="add.js"></script>
 </head>
 
@@ -65,8 +65,9 @@
       <div class="header-content">
         <h1>Product Add</h1>
         <div class="header-content_right">
-      <form name="addProductForm" class="productForm">
-          <button class="btn btn-primary" type="submit" id="addProductFormSubmit" name="btn_save" value="save">Save</button>
+          <form name="addProductForm" class="productForm">
+            <button class="btn btn-primary" type="submit" id="addProductFormSubmit" name="btn_save"
+              value="save">Save</button>
         </div>
       </div>
     </div>
@@ -77,80 +78,80 @@
 
       <div class="alert alert-danger" role="alert"></div>
 
-        <div class="form-group row">
-          <label for="sku" class="col-sm-3 col-form-label">Sku:</label>
-          <div class="col-sm-9 col-lg-5">
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">XDS-FGS-</span>
-              </div>
-              <input type="text" class="form-control uppercase" id="sku" name="sku" aria-label="Sku">
-              <div class="input-group-append">
-                <span class="input-group-text">-GG</span>
-              </div>
+      <div class="form-group row">
+        <label for="sku" class="col-sm-3 col-form-label">Sku:</label>
+        <div class="col-sm-9 col-lg-5">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">XDS-FGS-</span>
+            </div>
+            <input type="text" class="form-control uppercase" id="sku" name="sku" aria-label="Sku">
+            <div class="input-group-append">
+              <span class="input-group-text">-GG</span>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="form-group row">
-          <label for="name" class="col-sm-3 col-form-label">Name:</label>
-          <div class="col-sm-9 col-lg-5">
-            <input type="text" class="form-control" id="name" name="name">
-          </div>
+      <div class="form-group row">
+        <label for="name" class="col-sm-3 col-form-label">Name:</label>
+        <div class="col-sm-9 col-lg-5">
+          <input type="text" class="form-control" id="name" name="name">
         </div>
+      </div>
 
-        <div class="form-group row">
-          <label for="Price" class="col-sm-3 col-form-label">Price:</label>
-          <div class="col-sm-9 col-lg-5">
-            <input type="text" class="form-control" id="price" name="Price">
-          </div>
+      <div class="form-group row">
+        <label for="Price" class="col-sm-3 col-form-label">Price:</label>
+        <div class="col-sm-9 col-lg-5">
+          <input type="text" class="form-control" id="price" name="Price">
         </div>
+      </div>
 
-        <div class="form-group row">
-          <label for="type" class="col-sm-3 col-form-label">Type switcher:</label>
-          <div class="col-sm-9 col-lg-5">
-            <select id="type" class="form-control">
-              <option value="dvd">DVD</option>
-              <option value="furniture">Furniture</option>
-              <option value="book">Book</option>
-            </select>
-          </div>
+      <div class="form-group row">
+        <label for="type" class="col-sm-3 col-form-label">Type switcher:</label>
+        <div class="col-sm-9 col-lg-5">
+          <select id="type" class="form-control">
+            <option value="dvd">DVD</option>
+            <option value="furniture">Furniture</option>
+            <option value="book">Book</option>
+          </select>
         </div>
+      </div>
 
-        <div class="form-group row dynamic-group dvd-group furniture-group" id="Size-group">
-          <label for="Size" class="col-sm-3 col-form-label">Size:</label>
-          <div class="col-sm-9 col-lg-5">
-            <input type="text" class="form-control" id="size" name="Size">
-          </div>
+      <div class="form-group row dynamic-group dvd-group furniture-group" id="Size-group">
+        <label for="Size" class="col-sm-3 col-form-label">Size:</label>
+        <div class="col-sm-9 col-lg-5">
+          <input type="text" class="form-control" id="size" name="Size">
         </div>
+      </div>
 
-        <div class="form-group row dynamic-group furniture-group" id="Height-group">
-          <label for="Height" class="col-sm-3 col-form-label">Height:</label>
-          <div class="col-sm-9 col-lg-5">
-            <input type="text" class="form-control" id="height" name="Height">
-          </div>
+      <div class="form-group row dynamic-group furniture-group" id="Height-group">
+        <label for="Height" class="col-sm-3 col-form-label">Height:</label>
+        <div class="col-sm-9 col-lg-5">
+          <input type="text" class="form-control" id="height" name="Height">
         </div>
+      </div>
 
-        <div class="form-group row dynamic-group furniture-group" id="Width-group">
-          <label for="Width" class="col-sm-3 col-form-label">Width:</label>
-          <div class="col-sm-9 col-lg-5">
-            <input type="text" class="form-control" id="width" name="Width">
-          </div>
+      <div class="form-group row dynamic-group furniture-group" id="Width-group">
+        <label for="Width" class="col-sm-3 col-form-label">Width:</label>
+        <div class="col-sm-9 col-lg-5">
+          <input type="text" class="form-control" id="width" name="Width">
         </div>
+      </div>
 
-        <div class="form-group row dynamic-group furniture-group" id="Length-group">
-          <label for="Length" class="col-sm-3 col-form-label">Length:</label>
-          <div class="col-sm-9 col-lg-5">
-            <input type="text" class="form-control" id="length" name="Length">
-          </div>
+      <div class="form-group row dynamic-group furniture-group" id="Length-group">
+        <label for="Length" class="col-sm-3 col-form-label">Length:</label>
+        <div class="col-sm-9 col-lg-5">
+          <input type="text" class="form-control" id="length" name="Length">
         </div>
+      </div>
 
-        <div class="form-group row dynamic-group book-group" id="Weight-group">
-          <label for="Weight" class="col-sm-3 col-form-label">Weight:</label>
-          <div class="col-sm-9 col-lg-5">
-            <input type="text" class="form-control" id="weight" name="Weight">
-          </div>
+      <div class="form-group row dynamic-group book-group" id="Weight-group">
+        <label for="Weight" class="col-sm-3 col-form-label">Weight:</label>
+        <div class="col-sm-9 col-lg-5">
+          <input type="text" class="form-control" id="weight" name="Weight">
         </div>
+      </div>
       </form>
     </div>
   </main>
