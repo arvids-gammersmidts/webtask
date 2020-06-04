@@ -44,6 +44,9 @@ $ackent-color: #008b8b;
 .uppercase {
   text-transform: uppercase;
 }
+.error {
+  border: 1px solid red !important;
+}
 
 // Import Scss
 @import 'header';
