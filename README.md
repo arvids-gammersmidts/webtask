@@ -49,3 +49,6 @@ Mājasdarbs uz 04.06.2020 :
 4) Savākt visus formas datus json objektā (Kādus tos sūtītu uz serveri)
 
 
+
+WEB programmēšana frontend gala darba uzdevums uz 18.06.2020 - 19.06.2020
+https://docs.google.com/document/d/1aAUeV0U9ZXr9NOSCX0qXhkovuaKkFyDrfWzcJkAnTLI/edit?usp=sharing
