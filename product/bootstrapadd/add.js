@@ -28,6 +28,9 @@ function isTextValid(value){
 }
 
 var form = {
+    config : {
+        aaa : "bbb"
+    },
     addSubmitEvent(submitButton){
         submitButton.click(function(event) {
             form.submit();
